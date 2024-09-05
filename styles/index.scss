@@ -10,7 +10,8 @@
     max-width: 1720px;
     margin: 0 auto;
     position: relative;
-    padding: 0 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 header.mobile {
@@ -212,14 +213,15 @@ header {
     background: $color-magenta;
 }
 
+
 .symbol {
     position: relative;
-
     display: flex;
     justify-content: center;
-
     align-items: center;
     height: 100vh;
+    overflow: hidden;
+ 
 
 
     .symbol-svg {
@@ -259,8 +261,8 @@ section:not(:last-child) {
 }
 
 .exp-block {
-    padding-top: 60px;
 
+    padding-top: 60px;
     ul {
         gap: 30px;
     }

@@ -102,7 +102,8 @@ p {
   max-width: 1720px;
   margin: 0 auto;
   position: relative;
-  padding: 0 60px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 header.mobile {
@@ -270,6 +271,7 @@ header nav .bottom-nav {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 .symbol .symbol-svg {
   position: absolute;

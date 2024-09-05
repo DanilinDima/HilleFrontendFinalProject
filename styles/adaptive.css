@@ -75,7 +75,8 @@
     line-height: 36.57px;
   }
   .container {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .partners-block {
     padding: 0;
