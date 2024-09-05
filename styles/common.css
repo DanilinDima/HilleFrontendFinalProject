@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46.32px;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.57px;
+  color: white;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.82px;
+  color: white;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: white;
+}
+
+p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: white;
+}
+
+.p-small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.h3-caps {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  letter-spacing: 1px;
+}
+
+.h4-caps {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  letter-spacing: 1px;
+}
+
+.gradient-text {
+  color: transparent;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.opacity20 {
+  opacity: 0.2;
+}/*# sourceMappingURL=common.css.map */

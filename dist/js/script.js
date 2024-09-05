@@ -1,0 +1,1 @@
+$(function(){$("#tabs").tabs()});let toggle=document.getElementById("toggle"),body=document.body;toggle.addEventListener("change",function(){toggle.checked?body.classList.add("no-scroll"):body.classList.remove("no-scroll")});
