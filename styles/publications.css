@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46.32px;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36.57px;
+  color: white;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.82px;
+  color: white;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: white;
+}
+
+p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: white;
+}
+
+.p-small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.h3-caps {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  letter-spacing: 1px;
+}
+
+.h4-caps {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  letter-spacing: 1px;
+}
+
+.gradient-text {
+  color: transparent;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.opacity20 {
+  opacity: 0.2;
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.container .mobile {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header.mobile {
+  display: none;
+}
+
+header.mobile {
+  flex-direction: column;
+  padding: 0;
+}
+header.mobile div {
+  display: flex;
+  justify-content: space-between;
+}
+header.mobile div.top {
+  padding: 15px 10px;
+  color: rgb(179, 179, 186);
+  background: rgb(245, 245, 250);
+}
+header.mobile div.bottom {
+  padding: 15px 15px 10px;
+  align-items: center;
+  color: rgb(179, 179, 186);
+}
+header.mobile div.bottom .logo-mobile-wrapper {
+  gap: 4px;
+  align-items: top;
+}
+header.mobile div.bottom .logo-mobile {
+  width: 70px;
+  height: 32px;
+}
+header.mobile div.bottom .title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  color: rgb(179, 179, 186);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.hamb {
+  padding: 7px;
+}
+.hamb #toggle {
+  display: none;
+}
+.hamb .hamburger {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.hamb .hamburger div {
+  position: relative;
+  width: 18px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgb(50, 50, 100);
+  transition: all 0.3s ease-in-out;
+}
+.hamb .nav {
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  z-index: 50;
+}
+.hamb .nav-wrapper {
+  position: relative;
+  height: 100%;
+}
+.hamb nav {
+  text-align: left;
+  padding: 30% 10% 0 20%;
+}
+.hamb nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 46.32px;
+  display: inline-block;
+  transition: color 0.2s ease-in-out;
+}
+.hamb #toggle:checked + .hamburger .top-bun {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+  background-color: #ffffff;
+}
+.hamb #toggle:checked + .hamburger .bottom-bun {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+  background-color: #ffffff;
+}
+.hamb #toggle:checked + .hamburger .meat {
+  opacity: 0;
+}
+.hamb #toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+header {
+  position: relative;
+  width: 100%;
+  z-index: 15;
+  color: white;
+  justify-content: space-between;
+  padding: 50px 0 60px;
+}
+header .desktop-logo-wrapper {
+  display: flex;
+  align-items: top;
+}
+header .desktop-logo-wrapper .title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43.88px;
+  color: rgb(50, 50, 100);
+}
+header nav {
+  row-gap: 16px;
+}
+header nav .top-nav {
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgb(179, 179, 186);
+}
+header nav .top-nav span {
+  font-weight: 700;
+}
+header nav .bottom-nav {
+  justify-content: end;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  color: rgb(36, 163, 255);
+}
+header nav .bottom-nav a.active {
+  position: relative;
+  color: rgb(240, 20, 90);
+}
+header nav .bottom-nav a.active::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: rgb(240, 20, 90);
+}
+
+.button-lang {
+  width: 33px;
+  height: 25px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.63px;
+  letter-spacing: 1px;
+  text-align: center;
+  border: 0;
+  background: none;
+  align-content: center;
+}
+.button-lang.active {
+  background: rgb(240, 20, 90);
+  color: white;
+}
+
+.button-lang:hover {
+  background: rgb(240, 20, 90);
+}
+
+.bottom-bg {
+  background: rgb(245, 245, 250);
+  padding-top: 30px;
+}
+
+.pub-block .toggle-container {
+  display: flex;
+  background-color: rgb(230, 230, 240);
+  border-radius: 10px;
+  padding: 2px;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto 30px;
+  gap: 2px;
+}
+.pub-block .toggle-button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(50, 50, 100);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.pub-block .toggle-button.active {
+  background-color: white;
+  color: rgb(50, 50, 100);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.pub-block .toggle-button:not(.active):hover {
+  background-color: rgb(245, 245, 250);
+}
+.pub-block .button-wrapper {
+  text-align: center;
+  padding: 30px 0;
+}
+.pub-block .button-wrapper .more-btn {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-align: center;
+  color: white;
+  background-color: rgb(36, 163, 255);
+  border-radius: 12px;
+  padding: 18px 30px;
+  border: none;
+  transition: 0.3s;
+}
+.pub-block .button-wrapper .more-btn:hover {
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+}
+.pub-block .pub-item-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 30px;
+}
+.pub-block .pub-item-wrapper .pub-item {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.pub-block .pub-item-wrapper .pub-item img {
+  width: 513px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  align-self: center;
+}
+.pub-block .pub-item-wrapper .pub-item div {
+  padding: 30px;
+  gap: 15px;
+  background-color: white;
+  min-height: 100%;
+}
+.pub-block .pub-item-wrapper .pub-item div h4 {
+  color: rgb(36, 163, 255);
+}
+.pub-block .pub-item-wrapper .pub-item div h4.h4-caps {
+  color: rgb(179, 179, 186);
+}
+.pub-block .pub-item-wrapper .pub-item div hr {
+  height: 4px;
+  background-color: rgb(230, 230, 240);
+  border: none;
+}
+.pub-block .pub-item-wrapper .pub-item div p {
+  color: black;
+}
+
+footer hr {
+  height: 2px;
+  background-color: rgb(230, 230, 240);
+  border: none;
+  margin: 30px 0;
+}
+footer div.addr {
+  justify-content: space-between;
+  margin-bottom: 21px;
+}
+footer div.addr a {
+  align-items: center;
+  gap: 10px;
+}
+footer div.addr a .h4-thin {
+  color: #323264;
+  font-weight: 400;
+}
+footer div.addr a .h4-caps {
+  color: rgb(36, 163, 255);
+}
+footer div.addr .h4-thin {
+  color: #B3B3BA;
+  font-weight: 400;
+}
+footer div.contacts {
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 30px;
+}
+footer div.contacts h4.tel {
+  color: #46466E;
+}
+footer div.contacts h4.email {
+  color: rgb(36, 163, 255);
+}
+footer .copyright-mobile {
+  margin-top: 20px;
+  display: none;
+  color: #B3B3BA;
+  font-weight: 400;
+}/*# sourceMappingURL=publications.css.map */
