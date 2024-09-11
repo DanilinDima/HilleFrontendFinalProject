@@ -111,6 +111,10 @@
     grid-template-rows: auto auto;
     row-gap: 30px;
   }
+  section.pub-block .pub-item-wrapper .pub-item img {
+    width: 100%;
+    min-height: 200px;
+  }
   footer svg:not(.facebooc-ico-blue) {
     display: none;
   }
