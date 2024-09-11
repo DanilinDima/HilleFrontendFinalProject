@@ -274,7 +274,7 @@ section:not(:last-child) {
     text-align: right;
     border-right: 4px solid rgba(255, 255, 255, 0.3);
     padding-right: 60px;
-    scroll-snap-type: x mandatory;
+
 
     span {
         color: rgba(179, 179, 186, 1);
@@ -288,10 +288,9 @@ section:not(:last-child) {
         @include gradient-text()
     }
 
-    li {
-        scroll-snap-align: start;
-    }
 }
+
+
 
 .exp-block__right {
     gap: 30px;
@@ -415,11 +414,6 @@ section:not(:last-child) {
         }
     }
 
-    // .scroll-dots {
-    //     justify-content: center;
-    //     gap: 15px;
-    //     padding-top: 30px;
-    // }
     .slick-dots {
         bottom: -47px;
         left: 0;
@@ -562,7 +556,7 @@ section:not(:last-child) {
 
 
         .pub-item {
-            // flex-basis: 32%;
+        
             border-radius: 12px;
             overflow: hidden;
 

@@ -314,7 +314,6 @@ section:not(:last-child) {
   text-align: right;
   border-right: 4px solid rgba(255, 255, 255, 0.3);
   padding-right: 60px;
-  scroll-snap-type: x mandatory;
 }
 .exp-block__left span {
   color: rgb(179, 179, 186);
@@ -327,9 +326,6 @@ section:not(:last-child) {
   background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   -webkit-background-clip: text;
           background-clip: text;
-}
-.exp-block__left li {
-  scroll-snap-align: start;
 }
 
 .exp-block__right {
