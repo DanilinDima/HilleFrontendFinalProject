@@ -1,5 +1,10 @@
 $( function() {
     $( "#tabs" ).tabs();
+    $('.slider-wrapper').slick({
+        arrows: false,
+        dots: true
+
+    });
   } );
 
   const toggle = document.getElementById('toggle');
