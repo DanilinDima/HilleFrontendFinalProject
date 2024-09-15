@@ -197,6 +197,9 @@ header.mobile div.bottom .title {
   display: inline-block;
   transition: color 0.2s ease-in-out;
 }
+.hamb nav a.active {
+  color: rgb(240, 20, 90);
+}
 .hamb #toggle:checked + .hamburger .top-bun {
   top: 50%;
   transform: rotate(-45deg) translate(0, -50%);
@@ -330,7 +333,7 @@ header nav .bottom-nav a.active::after {
   text-align: center;
   padding: 30px 0;
 }
-.pub-block .button-wrapper .more-btn {
+.pub-block .button-wrapper .btn {
   font-size: 16px;
   font-weight: 700;
   line-height: 19.5px;
@@ -342,7 +345,7 @@ header nav .bottom-nav a.active::after {
   border: none;
   transition: 0.3s;
 }
-.pub-block .button-wrapper .more-btn:hover {
+.pub-block .button-wrapper .btn:hover {
   box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
 }
 .pub-block .pub-item-wrapper {

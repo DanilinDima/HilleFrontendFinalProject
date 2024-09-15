@@ -86,7 +86,7 @@ header.mobile {
         border-radius: 2px;
         background-color: rgba(50, 50, 100, 1);
         transition: all 0.3s ease-in-out;
-           }
+    }
 
 
     .nav {
@@ -126,6 +126,10 @@ header.mobile {
         line-height: 46.32px;
         display: inline-block;
         transition: color 0.2s ease-in-out;
+
+        &.active {
+            color: $color-magenta;
+        }
 
     }
 
@@ -265,7 +269,7 @@ header {
         margin: 0 auto 30px;
         gap: 2px;
     }
-    
+
     .toggle-button {
         padding: 10px 20px;
         background: none;
@@ -277,22 +281,23 @@ header {
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
     }
-    
+
     .toggle-button.active {
         background-color: white;
         color: rgba(50, 50, 100, 1);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
-    
+
     .toggle-button:not(.active):hover {
         background-color: rgba(245, 245, 250, 1)
     }
+
     .button-wrapper {
         text-align: center;
-  padding: 30px 0;
+        padding: 30px 0;
 
 
-        .more-btn {
+        .btn {
             font-size: 16px;
             font-weight: 700;
             line-height: 19.5px;
@@ -308,9 +313,10 @@ header {
                 box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
 
             }
-
         }
     }
+
+
 
     .pub-item-wrapper {
         display: grid;

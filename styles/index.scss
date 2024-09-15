@@ -103,9 +103,11 @@ header.mobile {
         transition: all 0.3s ease-in-out;
         transform: scale(0);
         z-index: 50;
+        
 
     }
 
+ 
     .nav-wrapper {
         position: relative;
         height: 100%;
@@ -126,8 +128,7 @@ header.mobile {
         line-height: 46.32px;
         display: inline-block;
         transition: color 0.2s ease-in-out;
-
-    }
+        }
 
 
     #toggle:checked+.hamburger .top-bun {
